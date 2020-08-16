@@ -12,7 +12,8 @@ class HaloUrlsSpider(scrapy.Spider):
     name = 'get_urls_halo_nekretnine'
     custom_settings = {
         'ITEM_PIPELINES': {
-            'nekretnine_scrap.pipelines.pg.GetUrlsPGWriter': 400
+            'nekretnine_scrap.pipelines.pg.GetUrlsPGWriter': 400,
+            'nekretnine_scrap.pipelines.sql_server.GetUrlsSQLWriter': 500
         }
     }
 
@@ -60,7 +61,8 @@ class HaloSpider(scrapy.Spider):
     URLS = []
     custom_settings = {
         'ITEM_PIPELINES': {
-            'nekretnine_scrap.pipelines.pg.GetAdsPGWriter': 4
+            'nekretnine_scrap.pipelines.pg.GetAdsPGWriter': 4,
+            'nekretnine_scrap.pipelines.sql_server.GetAdsSQLWriter': 5
         }
     }
 

@@ -93,6 +93,11 @@ ITEM_PIPELINES = {
 # primer default:
 PG_PIPELINE_URL = 'postgres://postgres:postgres@127.0.0.1:5432/nekretnine'
 
+# sql server:  	mssql://USER:PASSWORD@HOST:PORT/NAME
+# primer default
+# vidi na https://docs.microsoft.com/en-us/sql/connect/python/pyodbc/step-3-proof-of-concept-connecting-to-sql-using-pyodbc?view=sql-server-ver15
+
+SQL_SERVER_PIPELINE_URL = 'mssql://USER:PASSWORD@HOST:PORT/DBNAME'
 # LOG_FILE = 'log.txt'
 
 # dodaj ovo : https://gist.github.com/seagatesoft/e7de4e3878035726731d

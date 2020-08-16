@@ -1,0 +1,21 @@
+CREATE TABLE staging (
+    id int IDENTITY(1,1) PRIMARY KEY,
+    add_id NVARCHAR(20),
+    add_json NVARCHAR(MAX),
+    url NVARCHAR(200),
+    project NVARCHAR(50),
+    spider NVARCHAR(50),
+    server NVARCHAR(50),
+    date DATETIME2
+);
+
+CREATE TABLE urls_to_dl (
+    id int IDENTITY(1,1) PRIMARY KEY,
+    add_id NVARCHAR(20),
+    add_price NVARCHAR(20),
+    url NVARCHAR(200),
+    project NVARCHAR(50),
+    spider NVARCHAR(50),
+    server NVARCHAR(50),
+    date DATETIME2
+)
