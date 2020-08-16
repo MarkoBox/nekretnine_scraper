@@ -9,7 +9,8 @@ U drugom skida sve informacije iz oglasa
 
 Potrebni su:
 
-Python >= 3.7 sa virtualenv i Postgres > 9.0
+Python >= 3.7 sa virtualenv i PostgreSQL > 9.0
 
 Podesiti PG_PIPELINE_URL parametar pre pokretanja.
+Sema baze se nalazi u staging_ddl.sql
 
